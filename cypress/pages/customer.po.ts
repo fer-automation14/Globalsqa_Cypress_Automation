@@ -1,5 +1,4 @@
 export class CustomerPage {
-  // deposit methods
   public getUserSelect() {
     return cy.get("#userSelect");
   }
@@ -58,7 +57,6 @@ export class CustomerPage {
     return cy.get(".error");
   }
 
-  // withdrawn methods
   public getMenuWithdrawnButton() {
     return cy.get(".borderM > .center:nth-child(5) > .btn:nth-child(3)");
   }
@@ -75,12 +73,10 @@ export class CustomerPage {
     return cy.get(".error");
   }
 
-  // reset method
   public getResetButton() {
     return cy.get('[style="float:right;margin-top:-30px;"]');
   }
 
-  // logout methods
   public getLogoutButton() {
     return cy.get(".logout");
   }

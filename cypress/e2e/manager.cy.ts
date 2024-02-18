@@ -1,7 +1,5 @@
 import { HelperMethods } from '../util/helper-methods';
 
-const moment = require('moment');
-
 const { HomePage } = require('../pages/home.po');
 
 describe('Manager', () => {

@@ -2,8 +2,7 @@ export class ManagerPage {
   public getHomeButton() {
     return cy.get(".home");
   }
-  
-  // add customer methods
+
   public getAddCustomerMenuButton() {
     return cy.get(".border > .center:nth-child(1) > .btn:nth-child(1)");
   }
@@ -43,7 +42,6 @@ export class ManagerPage {
     return cy.get("#userSelect");
   }
 
-  // open account methods
   public getOpenAccountMenuButton() {
     return cy.get(".border > .center:nth-child(1) > .btn:nth-child(2)");
   }

@@ -184,5 +184,19 @@ describe('Customer', () => {
     customersPage.getUserSelectButton().click();
     customersPage.getLogoutButton().click();
     customersPage.getCustomerNameLabel().should('have.text', 'Your Name :');
+    customersPage.getHomeButton().click();
+  });
+
+  it('should login user account ', () => {
+    // act
+    const customersPage = new HomePage().goToCustomerPage();
+
+    // assert
+    customersPage.getUserSelect().select(1);
+    customersPage.getUserSelectButton().click();
+    customersPage.getUserWelcomeMessage().should('have.text', 'Hermoine Granger');
+    customersPage.getLogoutButton().click();
+    customersPage.getCustomerNameLabel().should('have.text', 'Your Name :');
+    customersPage.getHomeButton().click();
   });
 });

@@ -1,10 +1,17 @@
 export class CustomerPage {
+  public getHomeButton() {
+    return cy.get(".home");
+  }
+  
   public getUserSelect() {
     return cy.get("#userSelect");
   }
 
   public getUserSelectButton() {
     return cy.get(".btn-default");
+  }
+  public getUserWelcomeMessage(){
+    return cy.get('.fontBig');
   }
 
   public getAccountSelect() {
